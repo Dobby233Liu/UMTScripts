@@ -67,4 +67,7 @@ pushi.e 0
 pop.v.i self.wck
 ", Data));
                     }
+					var codecca = Data.GameObjects.ByName("obj_time").EventHandlerFor(EventType.KeyPress, EventSubtypeKey.vk_f3, Data.Strings, Data.Code, Data.CodeLocals);
+codecca.Replace(Assembler.Assemble(@"
+", Data));
 					ScriptMessage("ok; 4urdata: debug enabled; f12 to toggle debug; dogcheck disabled");
